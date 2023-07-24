@@ -1,1 +1,1 @@
-testing if adding README works
+The group will touch people's hearts twice: once through the ears, and once again through the eyes
