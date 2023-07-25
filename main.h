@@ -19,8 +19,8 @@ typedef struct what_format
 } what_format;
 
 int write_char(va_list args);
-/* void write_str(va_list args);
-void write_int(va_list args);
+int  write_str(va_list args);
+/* void write_int(va_list args);
 void write_dz(va_list args);
 int _putchar(char c); */
 
