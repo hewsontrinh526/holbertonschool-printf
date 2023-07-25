@@ -39,6 +39,11 @@ int _printf(const char *format, ...)
           {
             printed = printed + res(args);
           }
+	  if (res == NULL)
+	  {
+		  _putchar('%');
+		  _putchar(format[i + 1]);
+	  }
           i = i + 2;
         }
       else
