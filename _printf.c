@@ -12,6 +12,7 @@ int _printf(const char *format, ...)
   int i;
   int printed;
   va_list args;
+  int (*res)(va_list);
 
   printed = 0;
   
@@ -33,7 +34,7 @@ int _printf(const char *format, ...)
             va_end(args);
             return (-1);
           }
-          int (*res)(va_list) = get_form_func(format[i + 1]);
+          res = get_form_func(format[i + 1]);
           if (res != NULL)
           {
             printed = printed + res(args);
