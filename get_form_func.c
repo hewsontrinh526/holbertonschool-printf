@@ -16,9 +16,9 @@ int (*get_form_func(char type))(va_list args)
 {
 	what_format pzf[] = {
 		{"c", write_char},
-		{"s", write_str},
+		/** {"s", write_str},
 		{"d", write_dz},
-		{"i", write_int},
+		{"i", write_int}, */
 		{NULL, NULL}
 	};
 
