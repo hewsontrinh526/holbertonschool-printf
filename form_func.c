@@ -22,7 +22,6 @@ int write_str(va_list args)
 {
 	char *s;
 	int i;
-	int len;
 
 	i = 0;
 	s = va_arg(args, char *);
