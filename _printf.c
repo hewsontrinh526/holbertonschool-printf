@@ -32,7 +32,7 @@ int _printf(const char *format, ...)
 	      if (format[i + 1] == '\0')
 	      {
 		      va_end(args);
-		      return (-1); // exit cause nothing there
+		      return (-1);
 	      }
 	      res = get_form_func(format[i + 1]);
 	      if (res == NULL)
