@@ -50,7 +50,7 @@ int write_percent(__attribute__((unused)) va_list args)
 /**
 *
 */
-int int_to_char(int num)
+int int_to_char(long num)
 {
 	int i;
 
