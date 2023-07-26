@@ -58,7 +58,7 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(args);
-	if (printed > 0 && format[i - 1] == '\n')
+	if (printed > 0 && format[i] == '\n')
 	{
 		_putchar('\n');
 	}
