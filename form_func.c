@@ -5,8 +5,12 @@
 #include "main.h"
 
 /**
-*
-*/
+ * write_char - Printing a char
+ *
+ * @args: Argument to be printed
+ *
+ * Return: Output char, else 1
+ */
 int write_char(va_list args)
 {
 	char c;
@@ -16,8 +20,12 @@ int write_char(va_list args)
 }
 
 /**
-*
-*/
+ * write_str - Prints a string
+ *
+ * @args: Argument to be printed
+ *
+ * Return: Output string, else 1
+ */
 int write_str(va_list args)
 {
 	char *s;
@@ -39,8 +47,12 @@ int write_str(va_list args)
 }
 
 /**
-*
-*/
+ * write_percent - Prints a percent sign
+ *
+ * @args: Argument to be printed
+ *
+ * Return: Percent sign, else 1
+ */
 int write_percent(__attribute__((unused)) va_list args)
 {
 	_putchar('%');
@@ -48,8 +60,12 @@ int write_percent(__attribute__((unused)) va_list args)
 }
 
 /**
-*
-*/
+ * int_to_char - Converts an integer to a char
+ *
+ * @num: Integer to be converted
+ *
+ * Return: Output char, else 1
+ */
 int int_to_char(long num)
 {
 	int i;
@@ -72,8 +88,12 @@ int int_to_char(long num)
 }
 
 /**
-*
-*/
+ * write_num - Prints an number
+ *
+ * @args: Argument to be printe
+ *
+ * Return: Number to be printed
+ */
 int write_num(va_list args)
 {
 	int num;
