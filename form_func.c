@@ -46,3 +46,38 @@ int write_percent(__attribute__((unused)) va_list args)
 	_putchar('%');
 	return (1);
 }
+
+/**
+*
+*/
+int int_to_char(int num)
+{
+	int i;
+
+	i = 0;
+
+	if (num < 0)
+	{
+		_putchar('-');
+		num = num * -1;
+		i = i + 1;
+	}
+	if (num / 10 != 0)
+	{
+		i = i + int_to_char(num / 10);
+	}
+	_putchar(num % 10 + '0');
+	i = i + 1;
+	return (i);
+}
+
+/**
+*
+*/
+int write_num(va_list args)
+{
+	int num;
+
+	num = va_arg(args, int);
+	return (int_to_char(num));
+}
