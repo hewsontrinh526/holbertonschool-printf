@@ -18,8 +18,8 @@ int (*get_form_func(char type))(va_list args)
 		{"c", write_char},
 		{"s", write_str},
 		{"%", write_percent},
-		/** {"d", write_dz},
-		{"i", write_int}, */
+		{"d", write_num},
+		{"i", write_num},
 		{NULL, NULL}
 	};
 
