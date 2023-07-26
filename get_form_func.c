@@ -8,7 +8,7 @@
  * get_form_func - Gets the right format
  *
  * @type: Type of format
- * @args: asd
+ * @args: Arguments being printed
  *
  * Return: Format specifier else NULL
  */
