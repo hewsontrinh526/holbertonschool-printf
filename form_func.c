@@ -9,10 +9,10 @@
 */
 int write_char(va_list args)
 {
-  char c;
-  c = (char)va_arg(args, int);
-  _putchar(c);
-  return (1);
+	char c;
+	c = (char)va_arg(args, int);
+	_putchar(c);
+	return (1);
 }
 
 /**
@@ -32,4 +32,13 @@ int write_str(va_list args)
 		i = i + 1;
 	}
 	return (i);
+}
+
+/**
+*
+*/
+int write_percent(__attribute__((unused)) va_list args)
+{
+	_putchar('%');
+	return (1);
 }
