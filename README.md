@@ -1,7 +1,7 @@
 <h1 align="center">하나, 둘 _printf</h1>
 
 <div id="header" align="center">
-  <img src="https://3.bp.blogspot.com/-PYssohsH0lM/VfmNMsSb2hI/AAAAAAAGAYQ/6QWgRB5Fj9I/s1600/TS000519.png" width="200"/>
+  <img src="https://3.bp.blogspot.com/-PYssohsH0lM/VfmNMsSb2hI/AAAAAAAGAYQ/6QWgRB5Fj9I/s1600/TS000519.png" alt="AKB48 sticker" width="200"/>
 </div> 
 
 ## About The Project
