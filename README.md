@@ -1,5 +1,7 @@
 <h1 align="center">하나, 둘 _printf</h1>
+
 ## About The Project
+
 _Put your sneakers on,_
 
 _하나, 둘, ready, get set, go_ __printf_
@@ -16,7 +18,6 @@ A simple recreation of the standard library printf function with the following c
 | `d` | decimal |
 | `i` | integer |
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Table of Contents
 <details>
@@ -48,7 +49,6 @@ A simple recreation of the standard library printf function with the following c
 	</ol>
 </details>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Requirements
 
@@ -57,11 +57,7 @@ A simple recreation of the standard library printf function with the following c
 - No global variables can be used
 - No more than five functions per file
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## Repository Contents
-insert here the contents of the repo 
-e.g. file name and description
 
 | File | Description |
 |------|-------------|
@@ -72,7 +68,6 @@ e.g. file name and description
 | `main.h` | A header file containing the prototypes and `typedef struct what_format` |
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Getting Started
 To get a local copy up and running on your own machine follow these simple steps:
@@ -100,11 +95,10 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 Call the manual to read how `_printf` works:
 
 ```
-man _printf
+man ./man_3_printf
 
 ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Usage
 
@@ -139,7 +133,6 @@ String:[I am a string !]
 
 ![_printf-flowchart](./_printf-flowchart.png)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Authors
 - [Hewson Trinh](https://github.com/hewsontrinh526)
@@ -147,4 +140,3 @@ String:[I am a string !]
 
 `viola`
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
