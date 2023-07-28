@@ -36,15 +36,15 @@ A simple recreation of the standard library printf function with the following c
 	<li>
 	<a href="#getting-started">Getting Started</a>
 		<ul>
-		<li><a href="#installion">Installation</a></li>
+		<li><a href="#installation">Installation</a></li>
 		<li><a href="#man-page">Man page</a></li>
 		</ul>
 	</li>
 	<li>
 	<a href="#usage">Usage</a>
 		<ul>
-		<li><a href="#output-examples">Output Examples</a></li>
 		<li><a href="#flowchart">Flowchart</a></li>
+			<li><a href="#output-examples">Output Examples</a></li>
 		</ul>
 	</li>
 	<li>
@@ -56,8 +56,8 @@ A simple recreation of the standard library printf function with the following c
 
 ## Requirements
 
-- Ubuntu 20.04 LTS
-- Follows the betty linter style and documentation
+- [Ubuntu 20.04 LTS](https://ubuntu.com/download/desktop)
+- Follows the [betty](https://github.com/alx-tools/Betty/wiki) linter [style](https://github.com/hs-hq/Betty/blob/main/betty-style.pl) and [documentation](https://github.com/hs-hq/Betty/blob/main/betty-doc.pl)
 - No global variables can be used
 - No more than five functions per file
 
@@ -65,12 +65,11 @@ A simple recreation of the standard library printf function with the following c
 
 | File | Description |
 |------|-------------|
-| `_printf.c` | A function that prints anything similar to standard library `printf` |
-| `_putchar.c` | A function that prints a char using `write` similar to standard library `putchar` |
-| `form_func.c` | A compilation of all functions needed for the conversion specifiers of `_printf` |
-| `get_form_func.c` | A function that determines which format specifier function to call |
 | `main.h` | A header file containing the prototypes and `typedef struct what_format` |
-
+| `get_form_func.c` | A function that determines which format specifier function to call |
+| `form_func.c` | A compilation of all functions needed for the conversion specifiers of `_printf` |
+| `_putchar.c` | A function that prints a char using `write` similar to standard library `putchar` |
+| `_printf.c` | A function that prints anything similar to standard library `printf` |
 
 
 ## Getting Started
@@ -83,7 +82,6 @@ To get a local copy up and running on your own machine follow these simple steps
 
 ```
 git clone https://github.com/hewsontrinh526/holbertonschool-printf
-
 ```
 
 - Compile using the below:
@@ -100,7 +98,6 @@ Call the manual to read how `_printf` works:
 
 ```
 man ./man_3_printf
-
 ```
 
 
@@ -108,34 +105,22 @@ man ./man_3_printf
 
 `_printf("user input here")`
 
-### Output examples
-
-User input:
-
-```
-_printf("Oui Oui Baguette\n");
-_printf("Should print a single percent sign: %%\n");
-_printf("Character:[%c]\n", 'H');
-_printf("String:[%s]\n", "I am a string !");
-_printf("%d + %d = %d\n", INT_MIN, INT_MAX, (INT_MIN + INT_MAX))
-_printf("%i\n", INT_MIN);
-
-```
-Expected output:
-
-```
-Oui Oui Baguette
-Should print a single percent sign: %
-Character:[H]
-String:[I am a string !]
--2147483648 + 2147483647 = -1
--2147483648
-
-```
-
 ### Flowchart
 
 ![_printf-flowchart](./_printf-flowchart.png)
+
+
+
+### Output examples
+
+| User input | Expected output |
+|------------|-----------------|
+| `_printf("Oui Oui Baguette\n");` | `Oui Oui Baguette` |
+| `_printf("Should print a single percent sign: %%\n");` | `Should print a single percent sign: %` |
+| `_printf("Character:[%c]\n", 'H');` | `Character:[H]` |
+| `_printf("String:[%s]\n", "I am a string !");` | `String:[I am a string !]` |
+| `_printf("%d + %d = %d\n", INT_MIN, INT_MAX, (INT_MIN + INT_MAX))` | `-2147483648 + 2147483647 = -1` |
+| `_printf("%i\n", INT_MIN);` | `-2147483648` |
 
 
 ## Authors
